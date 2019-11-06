@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<title>Lesson Four: Box Model Activity</title>
+	<style>
+	/*Add CSS style here*/
+	/*begin solution code
+.content-box {
+		height: 5em;
+		width: 5em;
+		padding: 4em;
+		border: 1em solid;
+		margin: 1em;
+}
+#border-box {
+box-sizing: border-box;
+}
+end solution code*/
+	</style>
+  </head>
+  <body>
+	<article>
+
+  	<header>
+    	<h1>Headline</h1>
+  	</header>
+
+  	<section>
+    	<h1>A section</h1>
+    	<article class="content-box">
+      	<a href="#link">A Link</a>
+      	<p>A paragraph</p>
+    	</article>
+
+    	<article class="content-box" id="border-box">
+      	<a href="#link">A Link</a>
+      	<p>A paragraph</p>
+    	</article>
+
+  	</section>
+
+  	<footer>
+  	</footer>
+
+	</article>
+  </body>
+</html>
