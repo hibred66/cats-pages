@@ -8,11 +8,10 @@
 <title>Kitties To Go</title>
 <link rel="stylesheet" type=text/css href="style.css">
 
- <style>
+<style>
  * {
    box-sizing: border-box;
-
- }
+}
 p.a {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
@@ -27,10 +26,14 @@ p.b {
 nav {
   width: 100%;
   overflow: auto;
-  background-color: gray;
+  color: white;
+  background-color: grey;
+  padding: 1rem;
+  justify-content: space-between;
 }
 ul.nav {
   list-style-type: none;
+  color: white;
   margin: 0;
   padding: 0;
   overflow: auto;
@@ -45,18 +48,25 @@ li a {
 }
 body, html {
   margin: 0;
-  padding: 0;
+  padding: 3px;
 }
 img {
+  height: auto;
+  width: auto;
   float: left;
+  padding-right: 2rem;
   display: block;
   margin: auto;
+  text-align: auto;
+  max-width: 100%;
 }
 header {
   border: 2rem;
   background-image: url("banner-image.jpg");
   color: white;
-  padding-top: 0;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  padding-left: 1rem;
   background-color: lightblue;
   margin-bottom: 0;
   background-size: cover;
@@ -70,6 +80,8 @@ header h1 {
 }
 header p {
   margin-bottom: 0;
+  padding-bottom: 1.5rem;
+  padding-left:
 }
 blockquote {
 max-width: 550px;
@@ -82,32 +94,42 @@ color: #428bca;
 }
 footer {
   background-image: url("footer-image.jpg");
-  background-size: cover;
-  background-color: black;
-  padding-top: 1.2rem;
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   margin-bottom: 1.2rem;
   background-size: cover;
   text-align: center;
   color: white;
   clear: both;
 }
+
 logo {
     color: white;
     border-radius: 1em;
-    padding: 1em;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     position: absolute;
-    top: 50%;
-    left: 50%;
+
+    background: rgba(0,0,0,0.5);
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 .content-box {
   float: left;
+  width: 60;
+  border-width: 10em;
+  border-color: white;
+}
+.navbar {
+  background: none;
+  color: white;
 }
 .sidebar {
   float: left;
-  width: 40%;
+  width: 33%;
+  padding-bottom: 3rem;
 }
 .right {
   float: right;
@@ -116,10 +138,10 @@ logo {
   padding: 10px;
 }
 .left {
-  float: left;
-  width: 55%;
+  float: inherit;
+  width: 50%;
   border: 3px solid white;
-  padding: 5px;
+  padding: 1px;
 }
 .clearfix {
   overflow: auto;
@@ -127,6 +149,10 @@ logo {
 .logo {
   max-width: 50%;
   float: inherit;
+}
+.scaled {
+
+
 }
   </style>
 
@@ -136,7 +162,7 @@ logo {
   <header>
 
     <article>
-      <h1>Kitties To Go</h1>
+      <h1>Kitties To Go!</h1>
       <p>Mill Creek's premiere drive-thru<br>cat rentals</p>
 
     </article>
@@ -145,25 +171,24 @@ logo {
 
 <nav>
    <ul class="nav">
-
      <li><a href="#About">About</a></li>
      <li><a href="#Rates">Rates</a></li>
      <li><a href="#Liability">Liability Release</a></li>
      <li><a href="#Kitty-Profiles">Kitty Profiles</a></li>
      <li><a href="#Book-a-Cat">Book a Cat</a></li>
    </ul>
- </nav>
+</nav>
 
 <section>
-  <div cLass="left">
-    <article class="content-box">
-      <article>
-        <h1>Cat ipsum dolor ... for an two lines with color and bold. Need more text for at least another line.</h1>
-        <p>This paragraph is about whatever. It includes anything relevant about kitties for 3 to four lines. Kitties make great cuddling partners
+  <div class="left">
+  <article class="content-box">
+    <article>
+    <h2>Cat ipsum dolor ... for an two lines with color and bold. Need more text for at least another line.</h2>
+      <p>This paragraph is about whatever. It includes anything relevant about kitties for 3 to four lines. Kitties make great cuddling partners
           unless they are trying to caugh up fur balls. Fur balls are no fun for you or the kitty. In fact they are kind of gross.</p>
-      </article>
+    </article>
 
-      <blockquote class="">Please stop looking at your phone and pet me. need a two or three line quote. Maybe just a little bit more -Jeremy
+  <blockquote class="">Please stop looking at your phone and pet me. need a two or three line quote. Maybe just a little bit more ~Jeremy
       </blockquote>
 
       <article class="content-box">
@@ -174,16 +199,15 @@ logo {
             keep one where you live or maybe you travel alot and would need to find someone to care for your kitty. Renting provides all the benifits
              without all of the responsibility.</p>
       </article>
+
     </article>
   </div>
 </section>
 
   <aside class="sidebar">
 
-    <article class="content-box" id="border-box">
-      <h2>
-        <em>CATS IN THE NEWS</em>
-      </h2>
+    <article class="content-box">
+      <h2><em>CATS IN THE NEWS</em></h2>
         <p>Claw furniture fabric and caugh up fur balls is the way to do it. We love to have kitties curl up in our laps</p>
         <a href="#link">Find out more >></a>
 
@@ -194,30 +218,32 @@ logo {
     </article>
 
     <article>
+      <article class="content-box" id="border-box">
       <h2><em>CAT OF THE WEEK</em></h2>
-      <img src="sidebar-cat.jpg" alt="Photo of Cat">
-      <p>Stare at imaginary bug love blinks and purr purr purr purr</p>
+        <p><img src="sidebar-cat.jpg" alt="Photo of kitten"></p>
+        <p><figcaption>Stare at imaginary bug love blinks and purr purr purr purr</figcaption></p>
+
       <a href="#link">Book Now >></a>
+      </article>
     </article>
 
   </aside>
 
   <footer>
-    <div id="imginthefooter">
+
       <img src="cat-logo.png" alt="cat logo" style="" class="logo">
 
-      <p> Aborpos etc etc. Need more text here because it needs to flow to two lines, the problem with that is that I dont really like cats much.</p>
+      <p>Aborpos etc etc. Need more text here because it needs to flow to two lines, the problem with that is that I dont really like cats much.</p>
 
-      <nav>
+      <ul class="navbar">
         <a href="https://www.">Footer Link 1</a> |
         <a href="https://www.">Footer Link 2</a> |
         <a href="https://www.">Footer Link 3</a> |
         <a href="https://www.">Footer Link 4</a> |
-      </nav>
+      </ul>
 
-      <address>&copy;2019 Kitties to Go!, LLC | Mill Creek, WA 98012</address>
+      <p><address>&copy;2019 Kitties to Go!, LLC | Mill Creek, WA 98012</address></p>
 
-    </div>
   </footer>
 
 </body>
